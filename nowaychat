@@ -1,0 +1,22 @@
+
+
+local args = {
+    [1] = {
+        ["type"] = "Kill",
+        ["set"] = "Kura Camp Set",
+        ["rewards"] = {
+            ["essence"] = 8,
+            ["chestMeter"] = 55,
+            ["exp"] = 2500000,
+            ["cash"] = 25000
+        },
+        ["rewardsText"] = "$25000 | 2500000 EXP | 8 Mission Essence",
+        ["difficulty"] = 2,
+        ["title"] = "Defeat",
+        ["level"] = 240,
+        ["grade"] = "Grade 2",
+        ["subtitle"] = "a Curse User"
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.Server.Data.AcceptQuest:InvokeServer(unpack(args))
